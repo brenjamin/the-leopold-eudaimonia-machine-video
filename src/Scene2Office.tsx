@@ -13,18 +13,16 @@ export const Scene2Office: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {width} = useVideoConfig();
 
-	const imageSlide = interpolate(frame, [0, 300], [width / 12, -width / 12]);
+	const imageSlide = interpolate(frame, [0, 200], [width / 12, -width / 12]);
 
-	const officeOpacity = interpolate(frame, [210, 230], [0, 1]);
+	const officeOpacity = interpolate(frame, [80, 100], [0, 1]);
 
 	return (
 		<>
 			<AbsoluteFill
-				style={{
-					transform: `scale(1.25) translateX(${imageSlide}px)`,
-				}}
+				style={{transform: `scale(1.25) translateX(${imageSlide}px)`}}
 			>
-				<img src={wfh} />
+				<img src={wfh} style={{transform: 'translateY(-20%)'}} />
 			</AbsoluteFill>
 			<AbsoluteFill
 				style={{
@@ -32,7 +30,7 @@ export const Scene2Office: React.FC = () => {
 					opacity: officeOpacity,
 				}}
 			>
-				<img src={office} />
+				<img src={office} style={{transform: 'translateY(-20%)'}} />
 			</AbsoluteFill>
 		</>
 	);

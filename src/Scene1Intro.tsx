@@ -1,4 +1,11 @@
-import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from 'remotion';
+import {
+	AbsoluteFill,
+	Easing,
+	interpolate,
+	useCurrentFrame,
+	Sequence,
+	staticFile,
+} from 'remotion';
 import styled from 'styled-components';
 import machine from './img/eudaimonia-machine.png';
 import dewane from './img/dewane.png';
@@ -15,30 +22,28 @@ export const Scene1Intro: React.FC = () => {
 		text-align: center;
 	`;
 
-	const bgFilter = interpolate(frame, [120, 130], [0, 10], {
+	const bgFilter = interpolate(frame, [110, 120], [0, 10], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
 
-	const overlayOpacity = interpolate(frame, [120, 130], [0, 1], {
+	const overlayOpacity = interpolate(frame, [110, 120], [0, 1], {
 		extrapolateRight: 'clamp',
 	});
 
-	const dewaneSlide = interpolate(frame, [130, 140], [100, 0], {
+	const dewaneSlide = interpolate(frame, [120, 130], [100, 0], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
 
-	const catScale = interpolate(frame, [210, 220], [0, 1], {
+	const catSlide = interpolate(frame, [210, 220], [150, 0], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
-		easing: Easing.bounce,
 	});
 
-	const guyScale = interpolate(frame, [300, 310], [0, 1], {
+	const guySlide = interpolate(frame, [260, 270], [150, 0], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
-		easing: Easing.bounce,
 	});
 
 	return (
@@ -136,11 +141,27 @@ export const Scene1Intro: React.FC = () => {
 						flexDirection: 'column',
 					}}
 				>
-					<div style={{transform: `scale(${catScale})`}}>
-						<Gif src={cat} width={500} height={500}></Gif>
+					<div
+						style={{
+							transform: `translateX(${catSlide}%)`,
+							height: '500px',
+							width: '500px',
+						}}
+					>
+						<Gif src={staticFile('cat-typing.gif')} width={500} height={500} />
 					</div>
-					<div style={{transform: `scale(${guyScale})`}}>
-						<Gif src={guy} width={500} height={500}></Gif>
+					<div
+						style={{
+							transform: `translateX(${guySlide}%)`,
+							height: '500px',
+							width: '500px',
+						}}
+					>
+						<Gif
+							src={staticFile('mountain-man.gif')}
+							width={500}
+							height={500}
+						/>
 					</div>
 				</div>
 			</AbsoluteFill>

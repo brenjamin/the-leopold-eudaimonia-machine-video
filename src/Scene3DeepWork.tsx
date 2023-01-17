@@ -21,17 +21,17 @@ export const Scene3DeepWork: React.FC = () => {
 		text-align: center;
 	`;
 
-	const machineProgress = interpolate(frame, [80, 100], [0, -100], {
+	const machineProgress = interpolate(frame, [130, 150], [0, -100], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
 
-	const machine2Progress = interpolate(frame, [160, 180], [150, 0], {
+	const machine2Progress = interpolate(frame, [210, 230], [150, 0], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
 
-	const deepWorkProgress = interpolate(frame, [80, 100], [100, 0], {
+	const deepWorkProgress = interpolate(frame, [130, 150], [100, 0], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
@@ -140,7 +140,7 @@ export const Scene3DeepWork: React.FC = () => {
 						<Sequence
 							durationInFrames={Infinity}
 							style={{overflow: 'visible'}}
-							from={180}
+							from={240}
 						>
 							<Animation
 								duration={2}
@@ -169,7 +169,7 @@ export const Scene3DeepWork: React.FC = () => {
 						<Sequence
 							durationInFrames={Infinity}
 							style={{overflow: 'visible'}}
-							from={240}
+							from={300}
 						>
 							<Animation
 								duration={2}
