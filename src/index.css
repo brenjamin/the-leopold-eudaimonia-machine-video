@@ -187,3 +187,49 @@ h1 {
 	top: 0;
 	width: 100%;
 }
+
+.arrow {
+	position: relative;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: inline-block;
+}
+.arrow:before,
+.arrow:after {
+	content: '';
+	position: absolute;
+	background: #fff;
+	border-radius: 0.2rem;
+	display: block;
+}
+.arrow:before:hover,
+.arrow:after:hover {
+	background: #fff;
+}
+.arrow.left,
+.arrow.right {
+	width: 2em;
+}
+.arrow.left:before,
+.arrow.right:before {
+	top: 55%;
+}
+.arrow.left:after,
+.arrow.right:after {
+	bottom: 55%;
+}
+.arrow.left:before,
+.arrow.right:before,
+.arrow.left:after,
+.arrow.right:after {
+	left: -5%;
+	height: 25%;
+	width: 110%;
+}
+.arrow.right:before,
+.arrow.right:after {
+	transform: rotate(-45deg);
+}
+.arrow.right:after {
+	transform: rotate(45deg);
+}
