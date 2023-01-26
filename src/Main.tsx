@@ -7,6 +7,8 @@ import {Scene4TheLeopold} from './Scene4TheLeopold';
 import {Scene5Changes} from './Scene5Changes';
 import {Scene6TypicalDay} from './Scene6TypicalDay';
 import {Scene7LeopoldDay} from './Scene7LeopoldDay';
+import {Scene8Diagrams} from './Scene8Diagrams';
+import {Scene9Effacement} from './Scene9Effacement';
 
 export const Main: React.FC = () => {
 	return (
@@ -34,6 +36,12 @@ export const Main: React.FC = () => {
 			</Sequence>
 			<Sequence from={3460} durationInFrames={1000}>
 				<Scene7LeopoldDay />
+			</Sequence>
+			<Sequence from={4460} durationInFrames={1880}>
+				<Scene8Diagrams />
+			</Sequence>
+			<Sequence from={6340} durationInFrames={1880}>
+				<Scene9Effacement />
 			</Sequence>
 		</>
 	);

@@ -30,6 +30,9 @@ h1 {
 	position: relative;
 	z-index: 3;
 }
+img {
+	max-width: 100%;
+}
 .container {
 	z-index: 1;
 	position: relative;

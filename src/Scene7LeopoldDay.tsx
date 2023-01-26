@@ -131,12 +131,12 @@ export const Scene7LeopoldDay: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-	const arrowPoint1 = interpolate(frame, [920, 940], [20, 100], {
+	const arrowPoint1 = interpolate(frame, [900, 920, 940], [20, 20, 100], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
 
-	const arrowPoint2a = interpolate(frame, [920, 940], [20, 100], {
+	const arrowPoint2a = interpolate(frame, [900, 920, 940], [20, 20, 100], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
@@ -144,7 +144,7 @@ export const Scene7LeopoldDay: React.FC = () => {
 	const arrowPoint2b = interpolate(
 		frame,
 		[900, 920, 940, 960],
-		[100, 30, 38, 0],
+		[100, 37.5, 37.5, 0],
 		{
 			extrapolateLeft: 'clamp',
 			extrapolateRight: 'clamp',
@@ -154,7 +154,7 @@ export const Scene7LeopoldDay: React.FC = () => {
 	const arrowPoint3 = interpolate(
 		frame,
 		[900, 920, 940, 960],
-		[100, 30, 38, 0],
+		[100, 37.5, 37.5, 0],
 		{
 			extrapolateLeft: 'clamp',
 			extrapolateRight: 'clamp',
