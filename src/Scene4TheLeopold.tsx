@@ -68,7 +68,6 @@ export const Scene4TheLeopold: React.FC = () => {
 					style={{
 						width: '700px',
 						position: 'absolute',
-						zIndex: 20,
 						bottom: 0,
 						right: 0,
 						transform: `translateX(${leopoldSlide}%)`,
@@ -76,7 +75,12 @@ export const Scene4TheLeopold: React.FC = () => {
 				/>
 				<img
 					src={leopoldLand}
-					style={{position: 'relative', zIndex: '10', opacity: landOpacity}}
+					style={{
+						position: 'relative',
+						zIndex: '10',
+						opacity: landOpacity,
+						transform: 'translateY(-25px)',
+					}}
 				/>
 			</AbsoluteFill>
 		</>

@@ -518,7 +518,7 @@ export const Scene5Changes: React.FC = () => {
 								style={{
 									display: 'flex',
 									position: 'absolute',
-									transform: 'translate(-45%, -80%)',
+									transform: 'translate(-57%, -80%)',
 									top: '50%',
 									left: '50%',
 									gap: '10px',
