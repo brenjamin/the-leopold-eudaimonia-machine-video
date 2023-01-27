@@ -100,12 +100,17 @@ export const Scene11KeyofDeepWork: React.FC = () => {
 		return (walkerStep - Math.floor(frame / fps) * 10) * 112;
 	};
 
-	const bernX = interpolate(frame, [380, 515, 516, 651], [0, 475, -475, 0], {
-		extrapolateRight: 'clamp',
-		extrapolateLeft: 'clamp',
-	});
+	const bernX = interpolate(
+		frame,
+		[380, 515, 516, 651],
+		[-40, 820, -820, -40],
+		{
+			extrapolateRight: 'clamp',
+			extrapolateLeft: 'clamp',
+		}
+	);
 
-	const bernScale = interpolate(frame, [515, 516], [1, -1], {
+	const bernScaleX = interpolate(frame, [515, 516], [0.55, -0.55], {
 		extrapolateRight: 'clamp',
 		extrapolateLeft: 'clamp',
 	});
@@ -189,14 +194,16 @@ export const Scene11KeyofDeepWork: React.FC = () => {
 						<div
 							id="bern"
 							style={{
-								top: -300,
+								top: -270,
 								right: 460,
 								position: 'absolute',
 								backgroundPosition: `${normalizedWalkerStep() * -1}px 0`,
-								transform: `scaleX(${bernScale}) translateX(${bernX}px)`,
+								transform: `scaleX(${bernScaleX}) scaleY(0.55) translateX(${bernX}px)`,
 								transformOrigin: 'center center',
 								zIndex: 10,
 								opacity: bernOpacity,
+								width: '112px',
+								height: '156px',
 							}}
 						></div>
 						<img

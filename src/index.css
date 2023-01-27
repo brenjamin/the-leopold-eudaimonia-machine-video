@@ -237,13 +237,10 @@ img {
 	transform: rotate(45deg);
 }
 #bern {
-	/* Tamaño de la viñeta individual */
-	width: 112px;
-	height: 156px;
 	/* Cómo hay establecido un tamaño, centramos con margin:auto */
 	margin: auto;
 	/* Cargamos el sprite (el repeat-x se puede omitir, por defecto se repite) */
-	background-image: url(https://i.imgur.com/ifk0SLH.png);
+	background-image: url(./img/bern.png);
 	background-repeat: repeat-x;
 	bottom: 34px;
 }
