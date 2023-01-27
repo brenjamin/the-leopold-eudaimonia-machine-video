@@ -65,7 +65,12 @@ export const Scene9Effacement: React.FC = () => {
 		}
 	);
 
-	const laserOpacity = interpolate(frame, [400, 420], [0, 1], {
+	const laserOpacity = interpolate(frame, [420, 440], [0, 1], {
+		extrapolateLeft: 'clamp',
+		extrapolateRight: 'clamp',
+	});
+
+	const fadeIn = interpolate(frame, [0, 30], [0, 1], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
 	});
@@ -75,6 +80,7 @@ export const Scene9Effacement: React.FC = () => {
 			<AbsoluteFill
 				style={{
 					backgroundColor: 'black',
+					opacity: fadeIn,
 				}}
 			>
 				<AbsoluteFill

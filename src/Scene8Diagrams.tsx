@@ -525,7 +525,7 @@ export const Scene8Diagrams: React.FC = () => {
 							transform: `translate(40px, ${slideDef}px)`,
 						}}
 					>
-						mental&nbsp;preparedness
+						mental&nbsp;preparedness&nbsp;
 						<span
 							style={{
 								opacity: def2Opacity,
@@ -533,7 +533,7 @@ export const Scene8Diagrams: React.FC = () => {
 								position: 'relative',
 							}}
 						>
-							; the gradual narrowing of focus and elimination of distraction
+							– the gradual narrowing of focus and elimination of distraction
 							that occurs as you move through the machine
 						</span>
 					</span>
