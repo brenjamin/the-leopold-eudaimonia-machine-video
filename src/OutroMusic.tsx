@@ -13,8 +13,8 @@ export const OutroMusic: React.FC = () => {
 				volume={(f) =>
 					interpolate(
 						f,
-						[0, fps * 36, fps * 36.1, fps * 56],
-						[0.1, 0.1, 0.5, 0.5],
+						[0, fps * 36, fps * 36.1, fps * 61, fps * 66],
+						[0.1, 0.1, 0.5, 0.5, 0],
 						{extrapolateLeft: 'clamp'}
 					)
 				}
