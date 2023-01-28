@@ -1,7 +1,8 @@
-import {Composition} from 'remotion';
+import {Composition, Still} from 'remotion';
 import {Narration} from './Narration';
 import {Main} from './Main';
 import {Scene1Intro} from './Scene1Intro';
+import {Thumbnail} from './Thumbnail';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -32,6 +33,7 @@ export const RemotionRoot: React.FC = () => {
 				width={1920}
 				height={1080}
 			/>
+			<Still id="Thumbnail" component={Thumbnail} width={1920} height={1080} />
 		</>
 	);
 };
