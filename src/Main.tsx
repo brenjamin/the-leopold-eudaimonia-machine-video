@@ -22,7 +22,7 @@ export const Main: React.FC = () => {
 			<Sequence from={0} durationInFrames={10260}>
 				<Narration />
 			</Sequence>
-			<Sequence from={0} durationInFrames={350}>
+			<Sequence from={0} durationInFrames={365}>
 				<Scene1Intro />
 			</Sequence>
 			<Sequence from={340} durationInFrames={220}>
@@ -46,7 +46,7 @@ export const Main: React.FC = () => {
 			<Sequence from={4460} durationInFrames={1880}>
 				<Scene8Diagrams />
 			</Sequence>
-			<Sequence from={6310} durationInFrames={500}>
+			<Sequence from={6310} durationInFrames={525}>
 				<Scene9Effacement />
 			</Sequence>
 			<Sequence from={6810} durationInFrames={1160}>

@@ -273,6 +273,11 @@ export const Scene10ThresholdDiagram: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
+	const sceneOpacity = interpolate(frame, [0, 20], [0, 1], {
+		extrapolateLeft: 'clamp',
+		extrapolateRight: 'clamp',
+	});
+
 	return (
 		<>
 			<AbsoluteFill
@@ -282,6 +287,7 @@ export const Scene10ThresholdDiagram: React.FC = () => {
 					alignItems: 'center',
 					paddingTop: '160px',
 					filter: `blur(${bgFilter}px)`,
+					opacity: sceneOpacity,
 				}}
 			>
 				<Title style={{transform: 'scale(1.6)'}}>Thresholds</Title>

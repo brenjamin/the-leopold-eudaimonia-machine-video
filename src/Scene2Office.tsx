@@ -17,10 +17,18 @@ export const Scene2Office: React.FC = () => {
 
 	const officeOpacity = interpolate(frame, [80, 100], [0, 1]);
 
+	const sceneOpacity = interpolate(frame, [0, 20], [0, 1], {
+		extrapolateLeft: 'clamp',
+		extrapolateRight: 'clamp',
+	});
+
 	return (
 		<>
 			<AbsoluteFill
-				style={{transform: `scale(1.25) translateX(${imageSlide}px)`}}
+				style={{
+					transform: `scale(1.25) translateX(${imageSlide}px)`,
+					opacity: sceneOpacity,
+				}}
 			>
 				<img src={wfh} style={{transform: 'translateY(-20%)'}} />
 			</AbsoluteFill>
