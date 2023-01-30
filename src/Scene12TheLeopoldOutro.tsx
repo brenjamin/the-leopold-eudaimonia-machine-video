@@ -16,23 +16,6 @@ export const Scene12LeopoldOutro: React.FC = () => {
 		text-align: center;
 	`;
 
-	const opacity1 = interpolate(frame, [55, 56], [0, 1], {
-		extrapolateRight: 'clamp',
-	});
-	const opacity2 = interpolate(frame, [60, 61], [0, 1], {
-		extrapolateRight: 'clamp',
-	});
-
-	const leopoldSlide = interpolate(frame, [120, 130], [100, 0], {
-		extrapolateLeft: 'clamp',
-		extrapolateRight: 'clamp',
-	});
-
-	const landOpacity = interpolate(frame, [200, 220], [0, 1], {
-		extrapolateLeft: 'clamp',
-		extrapolateRight: 'clamp',
-	});
-
 	const fullOpacity = interpolate(frame, [0, 20], [0, 1], {
 		extrapolateLeft: 'clamp',
 		extrapolateRight: 'clamp',
@@ -55,7 +38,7 @@ export const Scene12LeopoldOutro: React.FC = () => {
 
 	const imageY = interpolate(
 		frame,
-		[410, 430, 490, 560],
+		[410, 430, 490, 615],
 		[0, -80, -80, -1000],
 		{
 			extrapolateLeft: 'clamp',

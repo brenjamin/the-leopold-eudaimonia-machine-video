@@ -1,4 +1,14 @@
-# Remotion video
+# The Leopold
+
+This is the second in a series of videos on the Eudaimonia Machine. This one is about The Leopold, a Eudaimonia Machine that was planned for construction but ultimately was never built. The plans for the machine, however, provide a look into the evolution of the machine's layout and design philosophy.
+
+[View YouTube Playlist](https://www.youtube.com/watch?v=IyRB3SbGnaY&list=PLliaWoyhTnjF6oQFYjviMGY4zAJHZHS2M)
+
+View other videos' repositories:
+
+- [The Eudaimonia Machine](https://github.com/brenjamin/eudaimonia-machine-video)
+
+## This video was made with Remotion
 
 <p align="center">
   <a href="https://github.com/remotion-dev/logo">
