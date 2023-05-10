@@ -7,6 +7,7 @@ This is the second in a series of videos on the Eudaimonia Machine. This one is 
 View other videos' repositories:
 
 - [The Eudaimonia Machine](https://github.com/brenjamin/eudaimonia-machine-video)
+- [The Eudaimonia Machine Lives!](https://github.com/brenjamin/eudaimonia-machine-lives)
 
 ## This video was made with Remotion
 
