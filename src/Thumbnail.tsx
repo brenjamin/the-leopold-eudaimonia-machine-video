@@ -1,10 +1,10 @@
 import {AbsoluteFill, useCurrentFrame, useVideoConfig} from 'remotion';
 import leopold from './img/aldo-leopold.png';
 import styled from 'styled-components';
-import leopoldPlanFull from './img/leopold-plan-full.png';
 import leopoldPlanClean from './img/leopold-plan-clean.png';
 import leopoldSineWave from './img/leopold-sine-wave.png';
-import leopoldOverhead from './img/leopold.png';
+import contemplative from './img/contemplative.jpg';
+import bern from './img/bern.png';
 
 export const Thumbnail: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -52,37 +52,44 @@ export const Thumbnail: React.FC = () => {
 					>
 						<div
 							style={{
-								border: '12px solid white',
-								backgroundColor: 'black',
-								width: '1000px',
+								border: '12px solid black',
+								backgroundColor: 'white',
+								width: '1500px',
 								height: 'auto',
-
 								boxShadow: '0 25px 50px -12px rgb(0 0 0 / 0.75)',
-								padding: '20px 0',
+
 								position: 'absolute',
 								zIndex: 1,
-								top: 500,
-								left: 450,
+								top: 550,
+								left: 250,
+								padding: '30px',
 							}}
 						>
-							<img style={{}} src={leopoldSineWave} />
+							<img style={{}} src={leopoldPlanClean} />
 						</div>
 
 						<div
 							style={{
-								padding: '30px',
 								overflow: 'hidden',
 								backgroundColor: 'white',
-								border: '12px solid black',
-								width: '1300px',
-								height: 'auto',
-								transform: 'translate(200px, -50px)',
+								border: '12px solid white',
+								width: '1000px',
+								height: '500px',
 								position: 'relative',
+								transform: 'translate(50px, -50px)',
 
 								boxShadow: '0 25px 50px -12px rgb(0 0 0 / 0.75)',
 							}}
 						>
-							<img style={{}} src={leopoldPlanClean} />
+							<img
+								style={{
+									position: 'absolute',
+									height: '100%',
+									width: '100%',
+									objectFit: 'cover',
+								}}
+								src={contemplative}
+							/>
 						</div>
 					</div>
 					<div
@@ -100,9 +107,9 @@ export const Thumbnail: React.FC = () => {
 								height: '1000px',
 								width: 'auto',
 								marginLeft: 'auto',
-								transform: 'translateX(300px)',
+								transform: 'translate(200px, -100px) scaleX(-1)',
 							}}
-							src={leopold}
+							src={bern}
 						/>
 					</div>
 				</div>
